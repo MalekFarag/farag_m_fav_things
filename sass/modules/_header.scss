@@ -1,0 +1,25 @@
+.mainHeader{
+    .mobileHead{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        .headLogo{
+            cursor: pointer;
+            p{
+                font-size: 20px;
+            }
+
+        }
+        .burger{
+            cursor: pointer;
+        .bLine{
+            background-color: black;  
+            width: 25px;   
+            height: 3px;
+            margin: 3px;
+            }
+        }
+    }
+}

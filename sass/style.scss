@@ -1,9 +1,17 @@
 @charset "utf-8";
 
 @import './modules/reset';
-@import './modules/vars';
+@import './modules/vars'; 
+@import './modules/header';
+@import './modules/footer';
 
-h1{
-    color: red;
-    width: 50%;
+.pageHome{
+    //title screen
+
+    .thingSec{
+        margin-top: 50px;
+        h2{
+            text-align: center;
+        }
+    }
 }
