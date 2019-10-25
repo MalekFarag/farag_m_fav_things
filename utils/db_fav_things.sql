@@ -46,10 +46,10 @@ CREATE TABLE IF NOT EXISTS `tbl_things` (
 --
 
 INSERT INTO `tbl_things` (`ID`, `name`, `image`, `genre`, `description`, `songs`, `date`, `thing`) VALUES
-(1, 'YBN Cordae', 'cordae.png', 'Rap', '', 'Broke as F*ck\r\nRNP\r\nHave Mercy', NULL, 'music'),
-(2, 'Yung Gravy', 'gravy.png', 'Alternative Hip-hop', '', 'Whip a Tesla\r\nMr. Clean\r\n1 Thot 2 Thot', NULL, 'music'),
-(3, 'Trippe Redd', 'trippie.png', 'Hip-hop/R&B', '', '1400 Freestyle\r\nShake it Up\r\nTaking a Walk', NULL, 'music'),
-(4, 'Nav', 'nav.png', 'Melody Hip-hop', '', 'Tap\r\nMyself\r\nPrice on My Head', NULL, 'music'),
+(1, 'YBN Cordae', 'cordae.png', 'Rap', '', 'Broke as F*ck, RNP, Have Mercy', NULL, 'music'),
+(2, 'Yung Gravy', 'gravy.png', 'Alternative Hip-hop', '', 'Whip a Tesla, Mr. Clean, 1 Thot 2 Thot', NULL, 'music'),
+(3, 'Trippe Redd', 'trippie.png', 'Hip-hop/R&B', '', '1400 Freestyle, Shake it Up, Taking a Walk', NULL, 'music'),
+(4, 'Nav', 'nav.png', 'Melody Hip-hop', '', 'Tap, Myself, Price on My Head', NULL, 'music'),
 (5, 'Rainbow 6 Siege', 'siege.png', 'First Person Shooter', '', NULL, NULL, 'game'),
 (6, 'Minecraft', 'minecraft.png', 'Survival/Sandbox', '', NULL, NULL, 'game'),
 (7, 'Rocket League', 'rl.png', 'Physics-based Car Soccer', '', NULL, NULL, 'game'),

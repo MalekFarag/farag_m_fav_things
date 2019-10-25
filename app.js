@@ -19,6 +19,7 @@ const express   = require('express'),
             console.log('Mysql connected.')
         });
 
+        //creating pool
         const pool = sql.createPool({
             connectionLimit : 10,
             host: "localhost",
@@ -69,9 +70,8 @@ const express   = require('express'),
 
         //selecting artists as test
             //able to put query into array for convenience
-        let query = [`SELECT name FROM tbl_things WHERE thing='music'`];
+        let query = [`SELECT name, genre, songs FROM tbl_things WHERE thing='music'`];
         pool.query(query[0], (err, result) => {
-            if (err) { throw err; console.log(err);
-            }
+            if (err) {throw err; console.log(err);}
             console.log(result)
         })
