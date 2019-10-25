@@ -24,9 +24,8 @@ const express   = require('express'),
         })
 
         //Dynamic
-        router.get('/thing:id', (req,res)=>{
-            console.log('Dynamic route.')
-            console.log(req.params.id)
+        router.get('/:thing', (req,res)=>{
+            console.log(`Dynamic route: ${req.params.thing}.`)
 
             //let query = `SELECT * FROM tbl_card WHERE profID="${req.params.id}"`;
             sql.query(query, (err, result) => {
@@ -37,5 +36,6 @@ const express   = require('express'),
         //Error
         router.get('*', (req,res)=>{
             console.log('error 404: page not found')
+            console.log(err)
             res.render('error')
         })
