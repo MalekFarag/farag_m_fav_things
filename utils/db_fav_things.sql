@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 25, 2019 at 10:27 PM
+-- Generation Time: Nov 02, 2019 at 11:01 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -48,15 +48,12 @@ CREATE TABLE IF NOT EXISTS `tbl_things` (
 INSERT INTO `tbl_things` (`ID`, `name`, `image`, `genre`, `description`, `songs`, `date`, `thing`) VALUES
 (1, 'YBN Cordae', 'cordae.png', 'Rap', '', 'Broke as F*ck, RNP, Have Mercy', NULL, 'music'),
 (2, 'Yung Gravy', 'gravy.png', 'Alternative Hip-hop', '', 'Whip a Tesla, Mr. Clean, 1 Thot 2 Thot', NULL, 'music'),
-(3, 'Trippe Redd', 'trippie.png', 'Hip-hop/R&B', '', '1400 Freestyle, Shake it Up, Taking a Walk', NULL, 'music'),
-(4, 'Nav', 'nav.png', 'Melody Hip-hop', '', 'Tap, Myself, Price on My Head', NULL, 'music'),
+(3, 'Trippie Redd', 'trippie.png', 'Hip-hop/R&B', '', '1400 Freestyle, Shake it Up, Taking a Walk', NULL, 'music'),
 (5, 'Rainbow 6 Siege', 'siege.png', 'First Person Shooter', '', NULL, NULL, 'game'),
 (6, 'Minecraft', 'minecraft.png', 'Survival/Sandbox', '', NULL, NULL, 'game'),
 (7, 'Rocket League', 'rl.png', 'Physics-based Car Soccer', '', NULL, NULL, 'game'),
-(8, 'Overwatch', 'overwatch.png', 'First Person Shooter', '', NULL, NULL, 'game'),
 (9, 'Music Festivals', 'fest.png', 'Social Activity', '', NULL, NULL, 'activity'),
 (10, 'Kayak', 'kayak.png', 'Sport', '', NULL, NULL, 'activity'),
-(11, 'Adventuring', 'adventure.png', 'Travel?', '', NULL, NULL, 'activity'),
 (12, 'Soccer', 'soccer.png', 'Sport', '', NULL, NULL, 'activity');
 COMMIT;
 
