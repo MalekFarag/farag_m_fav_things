@@ -1,3 +1,50 @@
 .mainFooter{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    .social{
+        width: 40%;
+        margin: auto 0 auto 0;
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        .fab{
+            font-size: 20px;  
+            cursor: pointer;
+            transition: all .2s ease;
+
+            &:hover{
+                opacity: .8;
+            }
+          }
+        .fa-youtube, .fa-twitter{
+            margin-top: 25px;
+        }
+    }
+
+    .footerNav{
+        .navList{
+            width: 100%;
+            a{
+                color: whitesmoke;
+                text-decoration: none;
+                transition: all .2s ease;
+
+                &:hover{
+                    border-bottom: 1px solid whitesmoke;
+                }
+            }
+            li{
+                width: 100%;
+                font-size: 12px;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
 }

@@ -1,12 +1,15 @@
-// global class rules
+// global rules
 
 .hidden{
     display: none;
 }
 
 body{
-    
+    height: 100%;
     width: 100%;
+    font-family: Helvetica, sans-serif;
+    background-color: #282B30;
+    color: whitesmoke;
 }
 
 main{

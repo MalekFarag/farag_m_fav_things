@@ -1,7 +1,7 @@
 const express   = require('express'),
       sql       = require('mysql'),
-      hbs       = require('hbs'),
-      router    = express.Router();
+      hbs       = require('hbs');
+      //router    = express.Router();
 
 
 
@@ -29,49 +29,51 @@ const express   = require('express'),
         });
 
         const app = express()
-        app.listen(3000)
-        console.log('Connected to port 3000.')
+              app.listen(3000)
+              console.log('Connected to port 3000.')
 
-        app.use(express.static('public'));
-        app.set('view engine', 'hbs');
+              app.use(express.static('public'));
+              app.set('view engine', 'hbs');
 
 
 
 
     //Routes
         //Home
-        router.get('/', (req,res)=>{
-            console.log('Home route.')
-            res.render('home')
+        app.get('/', (req,res)=>{
+            console.log('Home route.');
+            
+        // let query = [`SELECT name, genre, songs FROM tbl_things WHERE thing='music'`];
+        // pool.query(query[0], (err, result) => {
+        //     if (err) {throw err; console.log(err);}
+        //     res.render('home', {result: result})
+        // })
 
-            //let query = `SELECT * FROM tbl_card WHERE profID="${req.params.id}"`;
-            sql.query(query, (err, result) => {
-                if (err) { throw err; console.log(err);
-                }})
+        res.render('home');
+            
         })
 
         //Dynamic
-        router.get('/:thing', (req,res)=>{
-            console.log(`Dynamic route: ${req.params.thing}.`)
+        // app.get('/:thing', (req,res)=>{
+            //console.log(`Dynamic route: ${req.params.thing}.`)
 
             //let query = `SELECT * FROM tbl_card WHERE profID="${req.params.id}"`;
-            sql.query(query, (err, result) => {
-                if (err) { throw err; console.log(err);
-                }})
-        })
+            // sql.query(query, (err, result) => {
+            //     if (err) { throw err; console.log(err);
+            //     }})
+        // })
 
         //Error
-        router.get('*', (req,res)=>{
-            console.log('error 404: page not found')
-            console.log(err)
-            res.render('error')
+        app.get('/*', (req,res)=>{
+            console.log('error 404: page not found');
+            res.render('error');
         })
 
 
         //selecting artists as test
             //able to put query into array for convenience
-        let query = [`SELECT name, genre, songs FROM tbl_things WHERE thing='music'`];
-        pool.query(query[0], (err, result) => {
-            if (err) {throw err; console.log(err);}
-            console.log(result)
-        })
+        // let query = [`SELECT name, genre, songs FROM tbl_things WHERE thing='music'`];
+        // pool.query(query[0], (err, result) => {
+        //     if (err) {throw err; console.log(err);}
+        //     console.log(result);
+        // })
