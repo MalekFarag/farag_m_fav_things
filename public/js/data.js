@@ -9,6 +9,7 @@ console.log('Mysql JS connected.')
     let  dataDiv = y.querySelector('.data');
 
     dataName = this.className.split(' ')[1];
+    console.log("Data set to:" + dataName)
 
     const name      = dataDiv.querySelector('.name'),
           genre     = dataDiv.querySelector('.genre'),
@@ -23,8 +24,6 @@ console.log('Mysql JS connected.')
     desc.innerHTML = `{{${dataName}.description}}`;
     date.innerHTML = `{{${dataName}.date}}`;
     songs.innerHTML = `{{${dataName}.songs}}`;
-
-    console.log("Data set to:" + dataName)
  }
 
 menuItems.forEach(item => item.addEventListener('click', dataSwap));
