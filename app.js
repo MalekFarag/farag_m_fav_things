@@ -1,7 +1,6 @@
 const express   = require('express'),
       sql       = require('mysql'),
       hbs       = require('hbs');
-      //router    = express.Router();
 
 
 
@@ -14,11 +13,6 @@ const express   = require('express'),
             database: 'db_fav_things' // link db here
         });
 
-        //connecting to db
-        db.connect(()=>{ 
-            console.log('Mysql connected.')
-        });
-
         //creating pool
         const pool = sql.createPool({
             connectionLimit : 10,
@@ -28,6 +22,11 @@ const express   = require('express'),
             database: "db_fav_things"
         });
 
+        //connecting to db
+        db.connect(()=>{ 
+            console.log('Mysql connected.')
+        });
+
         const app = express()
               app.listen(3000)
               console.log('Connected to port 3000.')
@@ -35,22 +34,35 @@ const express   = require('express'),
               app.use(express.static('public'));
               app.set('view engine', 'hbs');
 
-
-
-
     //Routes
         //Home
         app.get('/', (req,res)=>{
-            console.log('Home route.');
-            
-        // let query = [`SELECT name, genre, songs FROM tbl_things WHERE thing='music'`];
-        // pool.query(query[0], (err, result) => {
-        //     if (err) {throw err; console.log(err);}
-        //     res.render('home', {result: result})
-        // })
+            pool.query('SELECT * FROM tbl_things', function (error, results, fields) {
+                if (error) throw error;
+                console.log('DB results: ', results);
 
-        res.render('home');
-            
+                res.render('home', {
+                    //music
+                    cordae:     results[0],
+                    gravy:      results[1],
+                    trippie:    results[2],
+
+                    //games
+                    siege:      results[3],
+                    minecraft:  results[4],
+                    rocket:     results[5],
+
+                    //activities
+                    fest:       results[6],
+                    kayak:      results[7],
+                    soccer:     results[8]
+                })
+              });
+        
+
+
+
+        console.log('Home route');
         })
 
         //Dynamic
@@ -65,15 +77,5 @@ const express   = require('express'),
 
         //Error
         app.get('/*', (req,res)=>{
-            console.log('error 404: page not found');
-            res.render('error');
+            res.render('error'); 
         })
-
-
-        //selecting artists as test
-            //able to put query into array for convenience
-        // let query = [`SELECT name, genre, songs FROM tbl_things WHERE thing='music'`];
-        // pool.query(query[0], (err, result) => {
-        //     if (err) {throw err; console.log(err);}
-        //     console.log(result);
-        // })
