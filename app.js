@@ -66,16 +66,35 @@ const express   = require('express'),
         })
 
         //Dynamic
-        // app.get('/:thing', (req,res)=>{
-            //console.log(`Dynamic route: ${req.params.thing}.`)
+        // app.get('/things/:id', (req,res)=>{
+            //console.log(`Dynamic route: ${req.params.id}.`)
 
-            //let query = `SELECT * FROM tbl_card WHERE profID="${req.params.id}"`;
+            let url = `/users/${this.getAttribute('herf')}`,
+                currentImg = this.previousElementSibling.getAttribute('src');
+
+            //let query = `SELECT * FROM tbl_card WHERE ID="${req.params.id}"`;
             // sql.query(query, (err, result) => {
             //     if (err) { throw err; console.log(err);
             //     }})
         // })
 
+        // maybe add this?
+        //app.use('/', require('routes/index.js'));
+
         //Error
-        app.get('/*', (req,res)=>{
-            res.render('error'); 
+        app.use((req,res,next) => {
+            let err = new Error('not found');
+            err.status = 404;
+            err.message = 'bruh moment 404';
+
+            next(err);
+            console.log('Error 404: page not found.')
         })
+
+        app.use((err, req, res) => {
+            res.render('error', { data: err, layout: false}); // , layout: 'errorPage'
+        })
+
+        // app.get('/*', (req,res)=>{
+        //     res.render('error'); 
+        // })
