@@ -34,6 +34,10 @@ const express   = require('express'),
               app.use(express.static('public'));
               app.set('view engine', 'hbs');
 
+    
+        // maybe add this?
+        //app.use('/', require('routes/index.js'));
+
     //Routes
         //Home
         app.get('/', (req,res)=>{
@@ -69,17 +73,14 @@ const express   = require('express'),
         // app.get('/things/:id', (req,res)=>{
             //console.log(`Dynamic route: ${req.params.id}.`)
 
-            let url = `/users/${this.getAttribute('herf')}`,
-                currentImg = this.previousElementSibling.getAttribute('src');
+            // let url = `/users/${this.getAttribute('herf')}`,
+            //     currentImg = this.previousElementSibling.getAttribute('src');
 
             //let query = `SELECT * FROM tbl_card WHERE ID="${req.params.id}"`;
             // sql.query(query, (err, result) => {
             //     if (err) { throw err; console.log(err);
             //     }})
         // })
-
-        // maybe add this?
-        //app.use('/', require('routes/index.js'));
 
         //Error
         app.use((req,res,next) => {
@@ -88,7 +89,7 @@ const express   = require('express'),
             err.message = 'bruh moment 404';
 
             next(err);
-            console.log('Error 404: page not found.')
+            console.log(err);
         })
 
         app.use((err, req, res) => {
