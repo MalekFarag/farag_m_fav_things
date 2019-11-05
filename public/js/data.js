@@ -9,14 +9,14 @@ console.log('Mysql JS connected.')
     let  dataDiv = y.querySelector('.data');
 
     dataName = this.className.split(' ')[1];
-    console.log("Data set to:" + dataName)
+    console.log("Data set to: " + dataName)
 
     const name      = dataDiv.querySelector('.name'),
           genre     = dataDiv.querySelector('.genre'),
           imgSrc    = dataDiv.querySelector('.images'),
           desc      = dataDiv.querySelector('.desc'),
-          date      = dataDiv.querySelector('.date'),
-          songs     = dataDiv.querySelector('.popSongs');
+          songs     = dataDiv.querySelector('.popSongs'),
+          date      = dataDiv.querySelector('.date');
 
     name.innerHTML = `{{${dataName}.name}}`;
     genre.innerHTML = `{{${dataName}.genre}}`;
