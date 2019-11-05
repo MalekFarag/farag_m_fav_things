@@ -31,13 +31,58 @@
                 background-color: black;
                 cursor: pointer;
             }
+            .cordae{
+                background: url('../images/cordae.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .gravy{
+                background: url('../images/gravy.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .trippie{
+                background: url('../images/trippie.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .siege{
+                background: url('../images/siege.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .minecraft{
+                background: url('../images/minecraft.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .rocket{
+                background: url('../images/rl.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .fest{
+                background: url('../images/fest.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .kayak{
+                background: url('../images/kayak.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .soccer{
+                background: url('../images/soccer.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
         }
         .data{
             margin-top: 30px;
             padding: 10px 15px 10px 15px;
             width: 100%;
             background-color: rgba(0,0,0,.2);
-            // text-align: center;
+            text-align: center;
             .name{
                 font-size: 24px;
             }
@@ -73,7 +118,6 @@
                 margin-top: 5px;
                 background-color: rgba(0, 0, 0, 0.6);
             }
-
         }
     }
 }
@@ -100,3 +144,48 @@
         }
     }
 }
+
+@media only screen and (min-width: 500px){
+    .pageHome{
+    .thingSec{
+        .menu{
+            .menuItem{
+                height: 125px;
+                width: 125px;
+            }
+        }
+        .data{
+            .images{
+                height: 250px;
+            }
+        }
+    }
+}
+}
+
+
+@media only screen and (min-width: 650px){
+    .pageHome{
+    .thingSec{
+        .menu{
+            .menuItem{
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (min-width: 950px){
+    .pageHome{
+    .thingSec{
+        .data{
+            .images{
+                height: 450px;
+            }
+        }
+    }
+}
+}
+

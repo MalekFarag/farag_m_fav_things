@@ -1,2 +1,441 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}.hidden{display:none}body{height:100%;width:100%;font-family:Helvetica, sans-serif;background-color:#282B30;color:whitesmoke}main{margin:0 auto}.mainHeader{position:fixed;width:100%}.mainHeader .mobileHead{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:15px;height:35px;background-color:rgba(0,0,0,0.4);-webkit-transition:all .3s ease;transition:all .3s ease;-webkit-box-shadow:0px 5px 20px 0px rgba(0,0,0,0.4);box-shadow:0px 5px 20px 0px rgba(0,0,0,0.4)}.mainHeader .mobileHead a{text-decoration:none;color:whitesmoke}.mainHeader .mobileHead .headLogo{cursor:pointer}.mainHeader .mobileHead .headLogo p{font-size:20px}.mainHeader .mobileHead .burger{cursor:pointer;-webkit-transition:all .2s ease;transition:all .2s ease}.mainHeader .mobileHead .burger .bLine{background-color:whitesmoke;width:25px;height:3px;margin:4px;-webkit-transition:all .2s ease;transition:all .2s ease}.mainHeader .mobileHead .burger .open{margin:6px;width:20px}.mainHeader .bg{background-color:rgba(0,0,0,0.7)}.mainHeader .mainNav{position:fixed;width:100%;height:100%;background-color:rgba(0,0,0,0.7);opacity:0;pointer-events:none;-webkit-transition:all .2s ease;transition:all .2s ease}.mainHeader .mainNav .navList{text-align:right;font-size:36px;-webkit-transform:translateX(300px);transform:translateX(300px);-webkit-transition:all .2s ease;transition:all .2s ease}.mainHeader .mainNav .navList a{color:whitesmoke;text-decoration:none;-webkit-transition:all .2s ease;transition:all .2s ease}.mainHeader .mainNav .navList a:hover{border-bottom:4px solid whitesmoke}.mainHeader .mainNav .navList .navItem{margin-top:40px;margin-bottom:80px;margin-right:30px}.mainHeader .mainNav .move{-webkit-transform:translateX(0px);transform:translateX(0px)}.mainHeader .on{opacity:1;pointer-events:all}.mainFooter{margin-top:20px;margin-bottom:20px;-ms-flex-item-align:end;align-self:flex-end;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly}.mainFooter .social{width:40%;margin:auto 0 auto 0;display:-ms-grid;display:grid;-ms-grid-columns:auto auto;grid-template-columns:auto auto;-ms-grid-rows:auto auto;grid-template-rows:auto auto}.mainFooter .social .fab{font-size:20px;cursor:pointer;-webkit-transition:all .2s ease;transition:all .2s ease}.mainFooter .social .fab:hover{opacity:.8}.mainFooter .social .fa-youtube,.mainFooter .social .fa-twitter{margin-top:25px}.mainFooter .footerNav .navList{width:100%}.mainFooter .footerNav .navList a{color:whitesmoke;text-decoration:none;-webkit-transition:all .2s ease;transition:all .2s ease}.mainFooter .footerNav .navList a:hover{border-bottom:1px solid whitesmoke}.mainFooter .footerNav .navList li{width:100%;font-size:12px;text-align:center;margin-top:10px}.pageHome{padding-top:60px}.pageHome .thingSec{margin-top:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly}.pageHome .thingSec h2{font-size:30px;width:100%;text-align:center}.pageHome .thingSec .menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:distribute;justify-content:space-around;margin-top:30px}.pageHome .thingSec .menu .menuItem{height:70px;width:70px;border-radius:50%;background-color:black;cursor:pointer}.pageHome .thingSec .data{margin-top:30px;padding:10px 15px 10px 15px;width:100%;background-color:rgba(0,0,0,0.2)}.pageHome .thingSec .data .name{font-size:24px}.pageHome .thingSec .data .genre{font-size:16px;margin-top:3px;color:rgba(255,255,255,0.75)}.pageHome .thingSec .data .songs{font-size:16px;margin-top:10px}.pageHome .thingSec .data .popSongs{font-size:14px;color:rgba(255,255,255,0.75);margin-top:5px}.pageHome .thingSec .data .date{font-size:16px;margin-top:10px}.pageHome .thingSec .data .descHead{font-size:16px;margin-top:10px}.pageHome .thingSec .data .desc{margin-top:5px;font-size:14px}.pageHome .thingSec .data .images{height:150px;margin-top:5px;background-color:rgba(0,0,0,0.6)}.pageError{height:83vh}.pageError .errDiv{padding-top:300px}.pageError .errIcon{text-align:center;font-size:70px}.pageError .errMsg{margin-top:50px;text-align:center;font-size:20px;line-height:26px}.pageError .errMsg a{color:whitesmoke;cursor:pointer}
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #282B30;
+  color: whitesmoke;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.mainHeader {
+  position: fixed;
+  width: 100%;
+}
+
+.mainHeader .mobileHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.mainHeader .mobileHead a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.mainHeader .mobileHead .headLogo {
+  cursor: pointer;
+}
+
+.mainHeader .mobileHead .headLogo p {
+  font-size: 20px;
+}
+
+.mainHeader .mobileHead .burger {
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.mainHeader .mobileHead .burger .bLine {
+  background-color: whitesmoke;
+  width: 25px;
+  height: 3px;
+  margin: 4px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.mainHeader .mobileHead .burger .open {
+  margin: 6px;
+  width: 20px;
+}
+
+.mainHeader .bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mainHeader .mainNav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.mainHeader .mainNav .navList {
+  text-align: right;
+  font-size: 36px;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.mainHeader .mainNav .navList a {
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.mainHeader .mainNav .navList a:hover {
+  border-bottom: 4px solid whitesmoke;
+}
+
+.mainHeader .mainNav .navList .navItem {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-right: 30px;
+}
+
+.mainHeader .mainNav .move {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.mainHeader .on {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mainFooter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mainFooter .social {
+  width: 40%;
+  margin: auto 0 auto 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.mainFooter .social .fab {
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.mainFooter .social .fab:hover {
+  opacity: .8;
+}
+
+.mainFooter .social .fa-youtube, .mainFooter .social .fa-twitter {
+  margin-top: 25px;
+}
+
+.mainFooter .footerNav .navList {
+  width: 100%;
+}
+
+.mainFooter .footerNav .navList a {
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.mainFooter .footerNav .navList a:hover {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.mainFooter .footerNav .navList li {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pageHome {
+  padding-top: 60px;
+}
+
+.pageHome .thingSec {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.pageHome .thingSec h2 {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.pageHome .thingSec .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.pageHome .thingSec .menu .menuItem {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+
+.pageHome .thingSec .menu .cordae {
+  background: url("../images/cordae.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .gravy {
+  background: url("../images/gravy.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .trippie {
+  background: url("../images/trippie.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .siege {
+  background: url("../images/siege.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .minecraft {
+  background: url("../images/minecraft.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .rocket {
+  background: url("../images/rl.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .fest {
+  background: url("../images/fest.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .kayak {
+  background: url("../images/kayak.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .menu .soccer {
+  background: url("../images/soccer.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pageHome .thingSec .data {
+  margin-top: 30px;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.pageHome .thingSec .data .name {
+  font-size: 24px;
+}
+
+.pageHome .thingSec .data .genre {
+  font-size: 16px;
+  margin-top: 3px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.pageHome .thingSec .data .songs {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.pageHome .thingSec .data .popSongs {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 5px;
+}
+
+.pageHome .thingSec .data .date {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.pageHome .thingSec .data .descHead {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.pageHome .thingSec .data .desc {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.pageHome .thingSec .data .images {
+  height: 150px;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pageError {
+  height: 83vh;
+}
+
+.pageError .errDiv {
+  padding-top: 300px;
+}
+
+.pageError .errIcon {
+  text-align: center;
+  font-size: 70px;
+}
+
+.pageError .errMsg {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.pageError .errMsg a {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+  .pageHome .thingSec .menu .menuItem {
+    height: 125px;
+    width: 125px;
+  }
+  .pageHome .thingSec .data .images {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .pageHome .thingSec .menu .menuItem {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .pageHome .thingSec .data .images {
+    height: 450px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

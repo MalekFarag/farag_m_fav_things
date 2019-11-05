@@ -53,36 +53,24 @@ const express   = require('express'),
                     soccer:     results[8]
                 })
               });
-
+            })
         //Dynamic
-        app.get('/things/:name', (req,res)=>{
-            console.log(`Dynamic route: ${req.params.name}.`)
+        // app.get('/things/:name', (req,res)=>{
+        //     console.log(`Dynamic route: ${req.params.name}.`)
 
-            let url = `/users/${this.className.split(' ')[1]}`;
+        //     let url = `/users/${this.className.split(' ')[1]}`;
 
-            let query = `SELECT * FROM tbl_card WHERE name="${req.params.name}"`;
-            db.query(query, (err, result) => {
-                if (err) { throw err; console.log(err);
-                    console.log(result);
-                }})
-        })
+        //     let query = `SELECT * FROM tbl_card WHERE name="${req.params.name}"`;
+        //     db.query(query, (err, result) => {
+        //         if (err) { throw err; console.log(err);
+        //             console.log(result);
+        //         }})
+        // })
+        // I gave up on this... sorry
 
         //Error
-        // app.use((req,res,next) => {
-        //     let err = new Error('not found');
-        //     err.status = 404;
-        //     err.message = 'bruh moment 404';
-
-        //     next(err);
-        //     console.log(err);
-        // })
-
-        // app.use((err, req, res) => {
-        //     res.render('error', { data: err, layout: false}); // , layout: 'errorPage'
-        // })
-
         app.get('/*', (req,res)=>{
             let err = new Error('404 page not found.');
 
             res.render('error', { data: err}); // , layout: 'errorPage'
-        })})
+        })
